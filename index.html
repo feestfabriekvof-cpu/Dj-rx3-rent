@@ -3,12 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pioneer XDJ‑RX3 huren – All‑in DJ‑set verhuur | Neighbour DJ</title>
-  <meta name="description" content="Pioneer XDJ‑RX3 huren met bezorging & aansluiting. Optioneel geluid, feestlichten en rookmachine. Snel geregeld via WhatsApp of e‑mail." />
+  <title>Pioneer XDJ-RX3 huren – All-in DJ-set verhuur | FeestFabriek</title>
+  <meta name="description" content="FeestFabriek verhuurt de Pioneer XDJ-RX3, geluid en licht. Wij bezorgen, installeren en halen weer op. Ook boeken als DJ's – house/disco specialist." />
+  <link rel="icon" href="feestfabriek-site/assets/logo.png" />
   <style>
-    :root{
-      --bg:#0b0c10; --card:#14161c; --muted:#8a91a4; --text:#eef2ff; --brand:#7c3aed; --brand-2:#22d3ee;
-    }
+    :root{ --bg:#0b0c10; --card:#14161c; --muted:#8a91a4; --text:#eef2ff; --brand:#ff4d3e; --brand-2:#22d3ee; }
     *{box-sizing:border-box}
     html,body{margin:0;padding:0;background:linear-gradient(180deg,#0b0c10 0%, #0b0c10 40%, #0f1220 100%);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
     a{color:inherit;text-decoration:none}
@@ -16,13 +15,15 @@
     header{position:sticky;top:0;backdrop-filter:saturate(140%) blur(8px);background:rgba(11,12,16,.6);border-bottom:1px solid rgba(255,255,255,.05);z-index:50}
     .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
     .logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.5px}
-    .logo .dot{width:10px;height:10px;border-radius:50%;background:radial-gradient(circle at 30% 30%, var(--brand-2), var(--brand))}
+    .brandmark{width:26px;height:26px;border-radius:6px;object-fit:contain;box-shadow:0 0 0 1px rgba(255,255,255,.1)}
     .btn{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.12);padding:10px 14px;border-radius:999px;transition:.2s ease;white-space:nowrap}
     .btn:hover{transform:translateY(-1px);border-color:rgba(255,255,255,.25)}
     .btn.primary{background:linear-gradient(90deg,var(--brand),var(--brand-2));border:none;color:#0b0c10}
-    .hero{padding:56px 0 24px}
+    .hero{padding:42px 0 10px;display:grid;gap:18px}
+    @media(min-width:900px){.hero{grid-template-columns:1.2fr .8fr;align-items:center}}
     .hero h1{font-size:clamp(28px,5vw,46px);line-height:1.1;margin:0 0 10px}
-    .sub{color:var(--muted);max-width:720px;margin:0 0 20px}
+    .sub{color:var(--muted);max-width:720px;margin:0 0 12px}
+    .hero-photo{width:100%;border-radius:16px;border:1px solid rgba(255,255,255,.08);box-shadow:0 8px 30px rgba(0,0,0,.35)}
     .stack{display:flex;flex-wrap:wrap;gap:12px}
     .grid{display:grid;gap:16px}
     @media(min-width:900px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}}
@@ -48,120 +49,98 @@
 <body>
   <header>
     <div class="container nav">
-      <div class="logo" aria-label="Merknaam">
-        <span class="dot" aria-hidden="true"></span>
-        <span>Neighbour DJ</span>
+      <div class="logo" aria-label="FeestFabriek">
+        <img src="feestfabriek-site/assets/logo.png" alt="FeestFabriek logo" class="brandmark" />
+        <span>FeestFabriek</span>
       </div>
       <nav class="stack">
-        <a class="btn" id="topEmail" href="mailto:silaswildt@gmail.com?subject=Beschikbaarheid%20XDJ‑RX3&body=Hoi%2C%20ik%20wil%20graag%20de%20Pioneer%20XDJ‑RX3%20huren%20op%20[DATUM]%20in%20[LOCATIE].%20Groet%2C">E‑mail</a>
-        <a class="btn primary" id="topWhatsApp" href="https://wa.me/31626284160?text=Hoi%2C%20ik%20wil%20de%20Pioneer%20XDJ‑RX3%20huren%20op%20[DATUM]%20in%20[LOCATIE]." target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn" href="mailto:Feestfabriekvof@gmail.com?subject=Beschikbaarheid%20XDJ-RX3&body=Hoi%2C%20ik%20wil%20graag%20de%20Pioneer%20XDJ-RX3%20huren%20op%20[DATUM]%20in%20[LOCATIE].%20Groet%2C">E-mail</a>
+        <a class="btn primary" href="https://wa.me/31626284160?text=Hoi%2C%20ik%20wil%20de%20Pioneer%20XDJ-RX3%20huren%20op%20[DATUM]%20in%20[LOCATIE]." target="_blank" rel="noopener">WhatsApp</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
     <section class="hero">
-      <div class="kicker">DJ‑set verhuur • snel geregeld</div>
-      <h1>Pioneer XDJ‑RX3 huren – bezorgd & aangesloten</h1>
-      <p class="sub">All‑in DJ‑set verhuur. Optioneel <strong>geluid</strong>, <strong>feestlichten</strong> en <strong>rookmachine</strong>. Gespecialiseerd in <strong>house & disco</strong>, maar alle stijlen mogelijk. Eén contactpersoon, zero‑stress.</p>
-      <div class="stack" style="margin-top:10px">
-        <a class="btn primary" id="heroWhatsApp" href="https://wa.me/31626284160?text=Hoi%2C%20ik%20wil%20de%20Pioneer%20XDJ‑RX3%20huren%20op%20[DATUM]%20in%20[LOCATIE]." target="_blank" rel="noopener">WhatsApp: check beschikbaarheid</a>
-        <a class="btn" id="heroEmail" href="mailto:silaswildt@gmail.com?subject=Beschikbaarheid%20XDJ‑RX3&body=Hoi%2C%20ik%20wil%20graag%20de%20Pioneer%20XDJ‑RX3%20huren%20op%20[DATUM]%20in%20[LOCATIE].%20Groet%2C">E‑mail</a>
+      <div>
+        <div class="kicker">DJ-set verhuur • snel geregeld</div>
+        <h1>Pioneer XDJ-RX3 huren – bezorgd & aangesloten</h1>
+        <p class="sub">All-in DJ-set verhuur. Optioneel <strong>geluid</strong>, <strong>feestlichten</strong> en <strong>rookmachine</strong>. Gespecialiseerd in <strong>house & disco</strong>, maar alle stijlen mogelijk. Eén contactpersoon, zero-stress.</p>
+        <p class="sub">Wij zijn jonge ondernemers met een passie voor muziek en geluid. Die liefde voor feesten combineren we met strak organiseren—zo is <strong>FeestFabriek</strong> ontstaan: verhuur en support zodat jij alleen hoeft te genieten.</p>
+        <div class="stack" style="margin-top:10px">
+          <a class="btn primary" href="https://wa.me/31626284160?text=Hoi%2C%20ik%20wil%20de%20Pioneer%20XDJ-RX3%20huren%20op%20[DATUM]%20in%20[LOCATIE]." target="_blank" rel="noopener">WhatsApp: check beschikbaarheid</a>
+          <a class="btn" href="mailto:Feestfabriekvof@gmail.com?subject=Beschikbaarheid%20XDJ-RX3&body=Hoi%2C%20ik%20wil%20graag%20de%20Pioneer%20XDJ-RX3%20huren%20op%20[DATUM]%20in%20[LOCATIE].%20Groet%2C">E-mail</a>
+        </div>
+      </div>
+      <div>
+        <img src="feestfabriek-site/assets/dj.jpg" alt="DJ van FeestFabriek draait live" class="hero-photo" />
       </div>
     </section>
 
     <section class="section">
       <h2>Opties & prijzen</h2>
+      <p class="muted">Alles wordt <strong>op maat</strong> geoffreerd. <strong>Studentenkorting</strong> beschikbaar. Afhalen mogelijk of <strong>bezorgd & geïnstalleerd</strong> door FeestFabriek.</p>
       <div class="grid cols-3">
         <article class="card">
-          <span class="badge">Alleen controller</span>
-          <h3>Pioneer XDJ‑RX3</h3>
-          <p class="muted">Ideaal als de locatie al speakers heeft of je zelf een PA regelt.</p>
+          <span class="badge">Losse verhuur</span>
+          <h3>Gear huren (pickup of bezorgd)</h3>
           <ul class="list">
-            <li>Flightcase, stroom & kabelset inbegrepen</li>
-            <li>Korte demo bij levering</li>
-            <li>Borg & ID‑check</li>
+            <li><strong>Pioneer XDJ-RX3</strong> (flightcase + kabelset)</li>
+            <li><strong>Geluidsinstallaties</strong> – 2 tops, met of zonder sub(s)</li>
+            <li><strong>Lichtsets</strong> – LED, moving heads, uplights</li>
+            <li><strong>Rookmachine/hazer</strong> (waar toegestaan)</li>
+            <li><strong>Draadloze microfoon(s)</strong> voor speeches</li>
           </ul>
-          <p class="price" aria-label="Prijs vanaf">vanaf €<strong>—</strong> / dag</p>
+          <p class="price"><strong>Prijs in overleg</strong></p>
           <div class="stack"><a class="btn" href="#contact">Vraag aan</a></div>
         </article>
+
         <article class="card">
-          <span class="badge">Plug & Play – klein</span>
-          <h3>RX3 + Geluid + Licht</h3>
-          <p class="muted">Voor borrels & huisfeesten tot ±75 gasten.</p>
-          <ul class="list">
-            <li>2 tops + statieven, basis lichtshow</li>
-            <li>Rookmachine (indien toegestaan)</li>
-            <li>Bezorging, op‑ & afbouw inbegrepen</li>
-          </ul>
-          <p class="price">vanaf €<strong>—</strong> / avond</p>
-          <div class="stack"><a class="btn" href="#contact">Vraag aan</a></div>
+          <span class="badge">DJ op je event</span>
+          <h3>Wij draaien graag zelf 🎧</h3>
+          <p class="muted">Wij zijn zelf DJ’s (house & disco specialist, all-round mogelijk). Intake, do-not-play en strak draaiboek inbegrepen. Geluid en licht kunnen we natuurlijk meeleveren.</p>
+          <p class="price"><strong>Prijs in overleg</strong> • <em>studentenkorting beschikbaar</em></p>
+          <div class="stack"><a class="btn" href="#contact">Datum checken</a></div>
         </article>
+
         <article class="card">
-          <span class="badge">Plug & Play – medium</span>
-          <h3>RX3 + Sub + Lichtshow</h3>
-          <p class="muted">Voor zalen & tuinfeesten tot ±150 gasten.</p>
+          <span class="badge">Zakelijk & specials</span>
+          <h3>Bedrijven, presentaties & karaoke</h3>
           <ul class="list">
-            <li>2 tops + 1 sub voor extra punch</li>
-            <li>Uitgebreide lichtset + rook</li>
-            <li>Snelle set‑up (±15 min)</li>
+            <li><strong>Presentaties/spreker</strong>: PA + (draadloze) microfoons</li>
+            <li><strong>Karaoke-avond</strong>: set met 2 mics + aansluitkabels voor scherm</li>
+            <li>Beurzen, openingen, winkelacties, schoolfeesten</li>
+            <li>Factuur mogelijk, KVK en btw in orde</li>
           </ul>
-          <p class="price">vanaf €<strong>—</strong> / avond</p>
-          <div class="stack"><a class="btn" href="#contact">Vraag aan</a></div>
+          <p class="price"><strong>Prijs in overleg</strong></p>
+          <div class="stack"><a class="btn" href="#contact">Offerte aanvragen</a></div>
         </article>
       </div>
-    </section>
-
-    <section class="section cards-2">
-      <article class="card">
-        <h3>Wat je krijgt</h3>
-        <ul class="list">
-          <li>Bezorgd, aangesloten & getest</li>
-          <li>Gratis kabelset + nette booth‑opstelling</li>
-          <li>Optioneel: draadloze microfoon</li>
-          <li>Support tijdens je event, reserve‑gear waar mogelijk</li>
-        </ul>
-      </article>
-      <article class="card">
-        <h3>Veelgestelde vragen</h3>
-        <dl class="faq">
-          <dt>Is er borg?</dt>
-          <dd>Ja, borg + geldig ID. Hoogte afhankelijk van pakket.</dd>
-          <dt>Waar bezorgen jullie?</dt>
-          <dd>Regio [vul jouw regio in]. Ophalen kan ook op afspraak.</dd>
-          <dt>Rookmachine toegestaan?</dt>
-          <dd>Alleen indien locatie het toelaat. We stemmen dit vooraf af.</dd>
-          <dt>Annuleren?</dt>
-          <dd>Kosteloos tot 7 dagen vooraf; daarna deel van het bedrag (afspraak op offerte).</dd>
-        </dl>
-      </article>
+      <p class="muted" style="margin-top:8px">Regio <strong>Utrecht</strong> als basis. <strong>Door heel Nederland</strong> te leveren en installeren tegen reiskostenvergoeding.</p>
     </section>
 
     <section id="contact" class="section">
       <h2>Vraag je datum aan</h2>
       <p class="muted">App of mail ons met <em>datum, locatie, tijden en aantal gasten</em>. We reageren snel met een voorstel.</p>
       <div class="stack">
-        <a class="btn primary" href="https://wa.me/31626284160?text=Hoi%2C%20ik%20wil%20de%20Pioneer%20XDJ‑RX3%20huren%20op%20[DATUM]%20in%20[LOCATIE]." target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp openen</a>
-        <a class="btn" href="mailto:silaswildt@gmail.com?subject=Beschikbaarheid%20XDJ‑RX3&body=Hoi%2C%20ik%20wil%20graag%20de%20Pioneer%20XDJ‑RX3%20huren%20op%20[DATUM]%20in%20[LOCATIE].%20Groet%2C" aria-label="E-mail">Stuur e‑mail</a>
+        <a class="btn primary" href="https://wa.me/31626284160?text=Hoi%2C%20ik%20wil%20de%20Pioneer%20XDJ-RX3%20huren%20op%20[DATUM]%20in%20[LOCATIE]." target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp openen</a>
+        <a class="btn" href="mailto:Feestfabriekvof@gmail.com?subject=Beschikbaarheid%20XDJ-RX3&body=Hoi%2C%20ik%20wil%20graag%20de%20Pioneer%20XDJ-RX3%20huren%20op%20[DATUM]%20in%20[LOCATIE].%20Groet%2C" aria-label="E-mail">Stuur e-mail</a>
       </div>
     </section>
   </main>
 
   <div class="cta-bar" aria-hidden="false">
     <div class="inner">
-      <a class="btn primary" href="https://wa.me/31626284160?text=Hoi%2C%20ik%20wil%20de%20Pioneer%20XDJ‑RX3%20huren%20op%20[DATUM]%20in%20[LOCATIE]." target="_blank" rel="noopener">WhatsApp: check datum</a>
-      <a class="btn" href="mailto:silaswildt@gmail.com?subject=Beschikbaarheid%20XDJ‑RX3">E‑mail</a>
+      <a class="btn primary" href="https://wa.me/31626284160?text=Hoi%2C%20ik%20wil%20de%20Pioneer%20XDJ-RX3%20huren%20op%20[DATUM]%20in%20[LOCATIE]." target="_blank" rel="noopener">WhatsApp: check datum</a>
+      <a class="btn" href="mailto:Feestfabriekvof@gmail.com?subject=Beschikbaarheid%20XDJ-RX3">E-mail</a>
     </div>
   </div>
 
   <footer>
     <div class="container">
-      <div class="muted">© <span id="year"></span> Neighbour DJ • Pioneer XDJ‑RX3 verhuur • House/Disco specialist – alle stijlen mogelijk • Tel. 06 2628 4160 • <a href="mailto:silaswildt@gmail.com">silaswildt@gmail.com</a></div>
+      <div class="muted">© <span id="year"></span> FeestFabriek • Pioneer XDJ-RX3 verhuur • House/Disco specialist – alle stijlen mogelijk • Tel. +31 6 2628 4160 • <a href="mailto:Feestfabriekvof@gmail.com">Feestfabriekvof@gmail.com</a></div>
     </div>
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
